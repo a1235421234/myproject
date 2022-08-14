@@ -16,12 +16,6 @@
   background-color: var(--bg_panel);
 }
 
-.main-tweet,
-.replies {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-
 .main-tweet .tweet-content {
   font-size: 18px;
 }
@@ -220,7 +214,7 @@
   white-space: pre-wrap;
 }
 
-video {
+.main-thread video {
   max-height: 100%;
   max-width: 100%;
 }
@@ -630,7 +624,7 @@ video {
   max-width: 80%;
   font-size: 14px;
   font-weight: 700;
-  color: var(--fg_color);
+  color: var(--fg_color) !important;
 }
 
 .username {
@@ -727,8 +721,12 @@ video {
   color: var(--fg_faded);
 }
 
-.media-tag-block .icon-container {
+.media-tag-block {
   padding-right: 2px;
+}
+
+.icon-container {
+  padding-right: 15px;
 }
 
 .media-tag-block .media-tag,
@@ -1156,40 +1154,6 @@ video {
   text-align: center;
 }
 
-.search-bar>form {
-  padding: 12px;
-  border-radius: 4px;
-  display: flex;
-  background: var(--darkest_grey);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin: auto;
-  margin-top: -50px;
-}
-
-.search-bar>form button {
-  background: var(--bg_elements);
-  color: var(--fg_color);
-  border: 0;
-  border-radius: 3px;
-  cursor: pointer;
-  font-weight: bold;
-  width: 30px;
-  height: 30px;
-}
-
-.search-bar>form input {
-  font-size: 16px;
-  width: 100%;
-  background: var(--bg_elements);
-  color: var(--fg_color);
-  border: 0;
-  border-radius: 4px;
-  padding: 4px;
-  margin-right: 8px;
-  height: unset;
-}
-
-
 .lp {
   height: 14px;
   margin-top: 2px;
@@ -1209,7 +1173,7 @@ video {
   font-size: 15px;
 }
 
-button {
+.main-thread button {
   background-color: var(--bg_elements);
   color: var(--fg_color);
   border: 1px solid var(--accent_border);
@@ -1219,11 +1183,11 @@ button {
   float: right;
 }
 
-button:hover {
+.main-thread button:hover {
   border-color: var(--accent);
 }
 
-button:active {
+.main-thread button:active {
   border-color: var(--accent_light);
 }
 
@@ -1659,7 +1623,7 @@ button:active {
 }
 
 .main-thread a {
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 a:hover {
